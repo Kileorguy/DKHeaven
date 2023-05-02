@@ -1,14 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css';
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import Home from './home';
 import { Theme, ThemeContext } from './context/ThemeContext';
 import { useContext, useState } from 'react';
-import { BrowserRouter, Link, Route, RouterProvider, Routes } from 'react-router-dom';
-import { BrowserRouter as Switch, Router } from 'react-router-dom';
+import { BrowserRouter,  Route,  Routes } from 'react-router-dom';
 
 import AnimeDetail from './page/AnimeDetail';
-import { Page, Searching } from './components/card/searching';
+import { Page } from './components/card/searching';
 import { Favorites } from './components/favorites';
 
 const client = new ApolloClient({

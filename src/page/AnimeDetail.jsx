@@ -1,4 +1,4 @@
-import { useParams, Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { GETT_ALL_ANIMES_BYID } from "../libs/queries/GetAllAnime";
 import { CardContainer } from "../components/card/card";
@@ -16,7 +16,9 @@ export default function AnimeDetail(){
             id : (loc.replace('/','')  )  
         }
     });
-    {console.log(data)}
+    if(_) return<h1>Loading...</h1>
+    if(__) return <h1>{__}</h1>
+    // {console.log(data)}
     if(!data) return <div><h1>Loading...</h1></div>
     return <div style={{ backgroundColor : theme.backgroundColor,
         color : theme.color,

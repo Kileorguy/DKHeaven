@@ -1,7 +1,4 @@
-import { useState } from "react";
 import { useQuery } from "@apollo/client"
-import { useEffect } from "react";
-import { useContext } from "react";
 import { GETT_ALL_ANIMES } from "../libs/queries/GetAllAnime";
 import { CardContainer } from "./card/card";
 

@@ -1,8 +1,5 @@
 import { useQuery } from "@apollo/client"
-import { useState } from "react";
-import { useContext } from "react";
-import { CardContainer, cardContainer } from "./components/card/card";
-import { ThemeContext } from "./context/ThemeContext";
+import { CardContainer } from "./components/card/card";
 // import { GET_ALL_ANIME } from "../lib/queries/GetAnime"
 import { GETT_ALL_ANIMES } from "./libs/queries/GetAllAnime";
 
@@ -13,7 +10,8 @@ export default function Home(){
             perPage : 50,
         }
     });
-
+    if(_) return <h1>Loading...</h1>
+    if(__) return <h1>{__}</h1>
     
 
     

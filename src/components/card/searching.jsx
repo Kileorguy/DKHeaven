@@ -1,9 +1,7 @@
 import { useState } from "react";
 import {  GETT_ALL_ANIMESBYNAME } from "../../libs/queries/GetAllAnime";
 import { useQuery } from "@apollo/client"
-import { useEffect } from "react";
 import { CardContainer } from "./card";
-import { useContext } from "react";
 
 
 export function Page(){
